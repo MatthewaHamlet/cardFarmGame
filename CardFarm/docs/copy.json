@@ -1,0 +1,92 @@
+{
+    "landing": {
+        "title": "CARD FARM",
+        "favicon": "images/assets/favicon/favicon-16x16.png",
+        "backgroundImg": "/images/background/SVG/Asset\\ 6.svg",
+        "navigation": {
+            "navItem": [{
+                    "href_01": "play.html",
+                    "text_01": "Play"
+                },
+                {
+                    "href_02": "help.html",
+                    "text_02": "Help"
+                },
+                {
+                    "href_03": "info.html",
+                    "text_03": "Info"
+                }
+            ]
+        },
+        "header": {
+            "logo_BackButton": [{
+                    "src": "/images/assets/SVG/Asset 5.svg"
+                },
+                {
+                    "src": "images/assets/SVG/SVG/Asset 8.svg"
+                }
+            ]
+        },
+        "main": {
+            "mainImage": [{
+                "src": "/images/assets/SVG/Asset 3.svg"
+            }]
+        },
+        "buttonText": {
+            "buttons": [{
+                    "playButtonText": "Play"
+                },
+                {
+                    "navButtonText": "Menu"
+                }
+            ]
+        },
+        "informationPage": {
+            "main": [{
+                    "subTitle": "Welcome To Card Farm"
+                },
+                {
+                    "copy_01": "I made this game for my daughter; because she's cool, so are you from reading this and playing the game.If you have any questions, want to follow me on social media, or have suggestions on how to make this better; click below!"
+                },
+                {
+                    "socialIcons": [
+                        "/images/social/facebook.svg",
+                        "/images/social/instagram.svg",
+                        "images/social/twitter (1).svg",
+                        "images/social/telegram.svg"
+                    ]
+                },
+                {
+                    "socialLinks": [
+                        "https://www.facebook.com/",
+                        "https://www.instagram.com/",
+                        "https://www.twitter.com",
+                        "#"
+                    ]
+                }
+
+            ]
+        },
+        "popUp": {
+            "popUpText": {
+                "title": "Contact",
+                "email": "Email address",
+                "emailHelp": "We'll never share your email with anyone else.",
+                "name": "Full-Name",
+                "textArea": "Whats on your mind?",
+                "btnText": "Submit"
+            }
+        },
+        "helpPage": {
+            "helpText": {
+                "title": "Help Me!",
+                "copy": "Here are some instructions for ya!"
+            }
+
+
+
+
+        }
+
+    }
+}

@@ -1,0 +1,84 @@
+@import './variables';
+
+// Navigation 
+
+
+button[role="navBtn"] {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    bottom: -50%;
+    right: 200%;
+    padding-bottom: 12%;
+    font-family: $fntFm;
+    box-shadow: 5px -5px 0 $boxSdw;
+    font-size: 22px;
+    color: $fontMc;
+    background: $btnNav;
+    -webkit-text-stroke: .75px rgb(71, 48, 5);
+    text-shadow: -1px -2px 0 $boxSdw;
+    border: 3px solid $borderC;  
+}
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+    
+
+    ul {
+        list-style: none;
+        margin: auto;
+        padding: 0;
+       
+
+        li {
+            text-align: center;
+            margin-bottom: 42px;
+            padding: 22px;
+          
+            font-family: $fntFm;
+
+            &:nth-child(1), &:nth-child(3) {
+                transform: rotate(-6deg);
+            }
+
+            &:nth-child(2) {
+                transform: rotate(6deg);
+            }
+
+    
+        }
+
+        a {
+            text-align: center;
+            font-weight: normal;
+            color: $fontMc;
+            text-transform: uppercase;
+            // font-size: 8em;
+            white-space: nowrap;
+            font-size: 82px;
+            z-index: 1000;
+            font-family: $fntFm;
+            text-shadow: 5px 5px 0 $boxSdw;
+            @include skew(0, -1.7deg, false);
+            @include transition-property(font-size);
+            @include transition-duration(0.5s);
+            -webkit-text-stroke: 3px $borderC;
+
+      
+        }
+
+      
+    }
+
+
+}
+
+.hide {
+    opacity: 0.3;
+}

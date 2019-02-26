@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Local CSS  -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <ul class="nav--hidden">
+            <li><a href="" role="navItem_01"></a></li>
+            <li><a href="" role="navItem_02"></a></li>
+            <li><a href="" role="navItem_03"></a></li>
+        </ul>
+    </div>
+    <!-- /Navigation -->
+
+    <!-- Landing Section -->
+    <section id="landing">
+
+        <!-- Header(logo, back button) -->
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col p-0 m-3">
+                    <img class=" float-right" src="" alt="Game Logo">
+
+                    <img class=" float-left" src="" alt="Back Button">
+                </div>
+            </div>
+        </div>
+        <!-- /Header(logo, back button) -->
+
+        <!-- Game -->
+        <div class="container--game">
+            <header>
+                <h1>CaRd FaRm</h1>
+            </header>
+
+            <section class="score-panel">
+                <ul class="stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+
+                <span class="moves">0</span> Move(s)
+
+                <div class="timer">
+                </div>
+
+                <div class="restart" onclick=startGame()>
+                    <i class="fa fa-repeat"></i>
+                </div>
+            </section>
+
+            <ul class="deck" id="card-deck">
+                <li class="card" type="diamond">
+
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 1chick.svg" alt="">
+                    </div>
+
+                </li>
+                <li class="card" type="plane">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 2Bull.svg" alt="">
+                    </div>
+                </li>
+                <li class="card match" type="anchor">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 3maleFarmer.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="bolt">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 5Bsheep.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="cube">
+                    <div class="side back container__img">
+                        <img class="side back " src="images/assets/SVG/SVG/Asset 6squirrel.svg" alt="">
+                    </div>
+                </li>
+                <li class="card match" type="anchor">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 3maleFarmer.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="leaf">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 4bunny.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="bicycle">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 7ldog.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="diamond">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 1chick.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="bomb">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 8cow.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="leaf">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 4bunny.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="bomb">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 8cow.svg" alt="">
+                    </div>
+                </li>
+                <li class="card open show" type="bolt">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 5Bsheep.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="bicycle">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 7ldog.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="plane">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 2Bull.svg" alt="">
+                    </div>
+                </li>
+                <li class="card" type="cube">
+                    <div class="side back container__img">
+                        <img class="side back" src="images/assets/SVG/SVG/Asset 6squirrel.svg" alt="">
+                    </div>
+                </li>
+            </ul>
+            <!-- /Game -->
+
+
+            <!-- Game PopUp -->
+            <div id="popup1" class="overlay">
+                <div class="popup" id="score--final">
+                    <h2>!Congratulations!</h2>
+
+                    <div class="content-1">
+                        Congratulations you're a winner
+                    </div>
+                    <div class="content-2">
+                        <p>You made <span id=finalMove> </span> moves </p>
+                        <p>in <span id=totalTime> </span> </p>
+                        <p>Rating: <span id=starRating></span></p>
+                    </div>
+                    <button role="playBtn" id="play-again" onclick="playAgain()">
+                        Play again </a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+          <!-- Navigation Button -->
+          <div class="container fixed-bottom">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <button class="btn" role="navBtn"></button>
+    
+                </div>
+            </div>
+        </div>
+        <!-- /Navigation Button -->
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Local JavaScript -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Game JavaScript -->
+    <script src="js/game.js"></script>
+</body>
+
+</html>
